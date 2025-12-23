@@ -63,8 +63,10 @@ adj_r2 = 1 - (1 - r2) * (n - 1) / (n - p - 1)
 # Visualization
 # -------------------------
 st.markdown('<div class="card">', unsafe_allow_html=True)
-st.subheader("Total Bill vs Tip")
-
+st.markdown(
+    "<h2 style='color:white;'>Total Bill vs Tip</h2>",
+    unsafe_allow_html=True
+)
 fig, ax = plt.subplots()
 
 # Scatter plot
@@ -86,7 +88,10 @@ st.markdown('</div>', unsafe_allow_html=True)
 # Performance Metrics
 
 st.markdown('<div class="card">', unsafe_allow_html=True)
-st.subheader("Model Performance")
+st.markdown(
+    "<h2 style='color:white;'>Model Performance</h2>",
+    unsafe_allow_html=True
+)
 
 c1, c2 = st.columns(2)
 c1.metric("MAE", f"{mae:.2f}")
